@@ -1,0 +1,23 @@
+.input-box {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  color: #1e293b;
+  font-size: 18px;
+  &__input {
+    text-align: center;
+    border: 2px solid #1e293b;
+    border-radius: 16px;
+    padding-inline: 8px;
+    width: 52px;
+    height: 34px;
+    outline: none;
+    transition: border-color 0.2s ease;
+    &:focus-visible {
+      border-color: #2563eb;
+    }
+  }
+  &__label {
+    font-weight: bold;
+  }
+}

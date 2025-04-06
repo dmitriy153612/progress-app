@@ -1,0 +1,42 @@
+@use "normalize.css";
+@use "@/style/config";
+@use "@/style/ui/input";
+@use "@/style/ui/switcher";
+@use "@/style/progressBarApp/progress-bar";
+@use "@/style/progressBarApp/progress-bar-control";
+
+.main {
+  display: grid;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  padding: 16px;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.app {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    @media (orientation: landscape) {
+      flex-direction: row;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--progress {
+      position: relative;
+      width: 180px;
+      height: 180px;
+    }
+  }
+}
